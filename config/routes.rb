@@ -58,6 +58,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-get 'nozomis/nozomi' => 'nozomis#nozomi'
+get 'nozomi' => 'nozomis#nozomi'
 
 end

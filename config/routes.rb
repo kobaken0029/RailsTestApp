@@ -57,4 +57,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+get 'nozomis/nozomi' => 'nozomis#nozomi'
+
 end

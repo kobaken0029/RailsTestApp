@@ -1,12 +1,20 @@
 Rails.application.routes.draw do
   
+  root 'home#index'
+  
+  devise_for :users
+  
+  get 'home/index'
+
+  get 'home/show'
+
   # sossii test page
   get 'sossii/test/:price' => 'sossii#test'
 
   # nozomi page
   get 'nozomi' => 'nozomis#nozomi'
   get 'washiwashi' => 'nozomis#washiwashi'
-
+  #rails s -p $PORT -b $IP
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
